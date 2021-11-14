@@ -1,26 +1,22 @@
 /* WORK NEW PAGE */
+#work-new{
+  height: 50vh;
+  padding: 10% inherit;
+  text-align: center;
+  background-color: #f0f4fb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
-.hello-1{
+}
+
+
+/* TITLE */
+.title-pad{
   padding-right: 0;
   margin-right: 0;
 }
-hr{
-  all:unset;
-}
-hr {
 
-  border-style: none;
-  border-top-style: dotted;
-  border-color: #6c94d4
-;
-  border-width: 5px;
-  width: 5%;
-  height: 15px;
-  margin-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  margin-right: 0
-}
 
 
 .title-div-2021{
@@ -42,106 +38,11 @@ hr {
   margin-bottom: 0;
 }
 
-.work-sec-new{
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-
-}
-
-.image-box{
-  display: inline-block;
-}
-
-.image-carousel{
-  width:480px;
-  height: 295px;
-}
-
-.carousel-item{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.carousel-item{
-  height: 296px;
-  background: grey;
-  color: white;
-  background-position: center;
-  /* align-items: center; */
-}
-
-.carousel-indicators{
-  margin-left: 0;
-  margin-right: 0;
-}
-.carousel-control-prev{
-  height: 296px;
-}
-
-.carousel-control-next{
-  height: 296px;
-}
-
-
-.image-inner-box{
-
-  text-align: center;
-}
-
-.text-box{
-  display: inline-block;
-}
-.text-inner-box{
-  text-align:
-
-}
-.work-info-right{
-  width: 60%;
-  margin: 30px auto 15px 160px;
-  margin-left: 85px;
-  text-align: left;
-  color: #545454;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-left: 0;
-  /* padding-top: 80px; */
-  font-size: 17px;
-}
-
-.work-info-left{
-  width: 50%;
-
-  margin: 30px auto 15px 155px;
-  text-align: left;
-  color: #545454;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* padding-top: 80px; */
-  font-size: 17px;
-}
-
-
-/* IMAGE CAROUSEL */
+/* MONTH SECTION */
 
 
 
 
-
-
-/* MEDIA */
 
 
 @media only screen and (max-width: 768px){
