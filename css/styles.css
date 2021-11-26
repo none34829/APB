@@ -494,6 +494,7 @@ nav {
   align-items: center;
 }
 
+
 /* Media */
 
 @media only screen and (max-width: 767px) {
@@ -605,3 +606,5 @@ nav {
     height: 42px;
   }
 }
+
+
