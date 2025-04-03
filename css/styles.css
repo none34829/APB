@@ -1,5 +1,5 @@
 :root {
-  --nav-height: 9vh;
+  --nav-height: 24vh;
   --nav-overlay-width: 40%;
   --primary-color: #9fc164;
   --secondary-color: #6b93d6;
@@ -28,7 +28,7 @@ section {
 }
 .home-desc {
   font-size: 20px;
-  color: #dddddd;
+  color: #333333;
 }
 
 .section-title {
@@ -60,7 +60,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #5cb874;
+  background: #c1331b;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -95,7 +95,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: var(--secondary-color);
+  background: #c1331b;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -130,8 +130,12 @@ nav {
 .brand img {
   position: relative;
   left: 0;
-  height: 8vh;
-  width: 11.5vw;
+  height: auto !important;
+  min-height: 70px !important;
+  max-height: 12vh !important;
+  width: auto !important;
+  max-width: none !important;
+  padding-top: 5px !important;
 }
 .menu {
   display: flex;
@@ -152,7 +156,7 @@ nav {
 
 /* Home */
 #home {
-  padding-top: 9vh;
+  padding-top: var(--nav-height);
   height: 100vh;
   width: 100%;
   color: white;
@@ -162,10 +166,10 @@ nav {
   width: 100%;
   padding: 0 10%;
   background-image: linear-gradient(
-      rgb(52, 101, 70, 0.7),
-      rgb(52, 101, 70, 0.7)
+      rgba(255, 236, 209, 0.6),
+      rgba(252, 213, 162, 0.6)
     ),
-    url("../content/slide/slide-1.jpg");
+    url("../content/slide/image-21-qob4xhkkjdxnsmmii6olapr8ji8czl2e6ze1omkhv4.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -190,7 +194,7 @@ nav {
 }
 .about-motto {
   font-weight: 600;
-  color: #12a712;
+  color: #ba351e;
 }
 .abt-img-wrapper {
   transition: all 0.35s;
@@ -208,11 +212,11 @@ nav {
 }
 .owl-next,
 .owl-prev {
-  background-color: var(--secondary-color) !important;
+  background-color: #c1331b !important;
 }
 .owl-next:hover,
 .owl-prev:hover {
-  background-color: var(--primary-color) !important;
+  background-color: rgba(193, 51, 27, 0.7) !important;
 }
 
 /* Achievements */
@@ -220,7 +224,7 @@ nav {
 #achievements {
   text-align: center;
   padding: 40px 2% 1px;
-  background-color: var(--bg-1);
+  background-color: rgba(193, 51, 27, 0.15);
 }
 .numerical-data {
   margin: 0 3%;
@@ -228,7 +232,7 @@ nav {
 .numerical-data h2 {
   font-size: 3rem;
   font-weight: bolder;
-  color: #4f7fd1;
+  color: #c1331b;
   /* text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6); */
 }
 .numerical-data p {
@@ -274,12 +278,12 @@ nav {
   margin-top: 34px;
 }
 #services .box .icon i:before {
-  background: #0c2e8a;
+  background: #c1331b;
   /* background: linear-gradient(45deg, #50d8af 0%, #a3ebd5 100%); */
   background: linear-gradient(
     45deg,
-    var(--primary-color) 0%,
-    var(--primary-color) 100%
+    #c1331b 0%,
+    #e15a44 100%
   );
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -322,7 +326,7 @@ nav {
   padding-top: 40px;
   padding-bottom: 100px;
   text-align: center;
-  background-color: var(--bg-1);
+  background-color: rgba(193, 51, 27, 0.15);
 }
 .initiatives-info {
   color: #212529;
@@ -330,7 +334,7 @@ nav {
 .button--link {
   letter-spacing: 1px;
   font-family: lato, Geneva, Tahoma, sans-serif;
-  color: #233f96;
+  color: #c1331b;
   align-self: flex-start;
   font-size: 13px;
   font-weight: 700;
@@ -409,7 +413,7 @@ nav {
 }
 #rollUp.scroll {
   opacity: 1;
-  background-color: var(--secondary-color);
+  background-color: #c1331b;
   height: 6vh;
   width: 6vh;
   display: flex;
@@ -431,16 +435,21 @@ nav {
     overflow-x: hidden;
   }
   .brand img {
-    width: 50vw;
+    height: auto !important;
+    min-height: 60px !important;
+    max-height: 10vh !important;
+    width: auto !important;
+    max-width: none !important;
+    padding-top: 10px !important;
   }
   .menu {
     color: white;
     position: absolute;
     right: 0;
-    height: 91vh;
+    height: calc(100vh - var(--nav-height));
     top: var(--nav-height);
     width: var(--nav-overlay-width);
-    background-color: rgb(107, 147, 214, 1);
+    background-color: rgba(193, 51, 27, 0.9);
     flex-direction: column;
     justify-content: left;
     align-items: center;
@@ -495,7 +504,7 @@ nav {
 }
 
 .wave .shape-fill {
-  fill: #c5daa2;
+  fill: rgba(193, 51, 27, 0.15);
 }
 
 /** For mobile devices **/
@@ -524,7 +533,7 @@ nav {
 }
 
 .wave-2 .shape-fill {
-  fill: #f0f4fb;
+  fill: rgba(193, 51, 27, 0.15);
 }
 
 /** For mobile devices **/
