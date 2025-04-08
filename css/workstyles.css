@@ -54,14 +54,14 @@
   display: block;
   width: 40px;
   height: 3px;
-  background: #5cb874;
+  background: #c1331b;
   bottom: 0;
   left: calc(50% - 20px);
 }
 .title-div-secondary {
   text-align: center;
   font-weight: bolder;
-  background-color:#aecc81;
+  background-color: hsl(7, 100%, 85%);
 }
 .title-div-secondary h1 {
   font-family: "Open Sans", sans-serif;
@@ -71,7 +71,7 @@
   padding-bottom: 17px;
   margin-bottom: 10px;
   position: relative;
-  background-color: #aecc81;
+  background-color: hsl(7, 100%, 85%);
 }
 .title-div-secondary h1::before {
   content: "";
@@ -89,7 +89,7 @@
   display: block;
   width: 40px;
   height: 3px;
-  background: var(--secondary-color);
+  background: #c1331b;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -111,7 +111,7 @@
   background-color: #f0f4fb;
 }
 .content-secondary {
-  background-color:#aecc81;
+  background-color: hsl(7, 100%, 85%);
 }
 
 /* Event */
