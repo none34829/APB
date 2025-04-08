@@ -293,10 +293,10 @@
           </div>
 
           <div class="certificate-slide">
-            <div class="col-md-5 px-5">
+        <div class="col-md-5 px-5">
               <img src="./content/For acheivements/08_Certificate.jpg" alt="Certificate 4" class="img-fluid">
-            </div>
-            <div class="col-md-6 pt-3 ps-5 d-flex flex-column about-text">
+        </div>
+        <div class="col-md-6 pt-3 ps-5 d-flex flex-column about-text">
               <h3 class="mt-2"><strong>Felicitated by Nagar Palika Nigam, Indore</strong></h3>
               <p>for outstanding efforts in civic engagement, awareness campaigns, and community mobilization under the Swachhta Pakhwada 2019.</p>
             </div>
@@ -428,7 +428,7 @@
           </a>
         </div>
         <div class="col-md-6" data-aos="fade-up">
-          <img style="width: 80%;" class="initiatives-img" src="./content/initiatives/download.png" alt="">
+          <img style="width: 80%;" class="initiatives-img" src="./content/initiatives/29-JUNE-2024-5-300x225.jpg" alt="">
         </div>
       </div>
     </div>
@@ -561,8 +561,13 @@
     let currentSlide = 0;
 
     function showSlide(index) {
-      slides.forEach(slide => slide.classList.remove('active'));
-      dots.forEach(dot => dot.classList.remove('active'));
+      slides.forEach((slide, i) => {
+        slide.style.display = 'none';
+        slide.style.transform = 'translateX(0)';
+        slide.classList.remove('active');
+        dots[i].classList.remove('active');
+      });
+      slides[index].style.display = 'flex';
       slides[index].classList.add('active');
       dots[index].classList.add('active');
     }
@@ -586,7 +591,9 @@
         showSlide(currentSlide);
       });
     });
-  });
+
+    showSlide(currentSlide); // Initialize the first slide
+    });
   </script>
 
 </body>

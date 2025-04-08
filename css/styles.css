@@ -599,13 +599,14 @@ nav {
 .certificate-slide {
   display: none;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transform: translateX(20px);
 }
 
 .certificate-slide.active {
   display: flex;
   opacity: 1;
-  flex-wrap: wrap;
+  transform: translateX(0);
 }
 
 .certificate-nav-button {
