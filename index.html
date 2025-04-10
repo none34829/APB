@@ -497,25 +497,26 @@
     </section>
   
     <style>
+      /* Base testimonials styles */
       #testimonials {
         padding: 60px 0;
         background-color: #f8f3f3;
         position: relative;
       }
-  
+
       .testimonial-subtitle {
         color: #c1331b;
         margin-top: 20px;
         font-size: 1.5rem;
         font-weight: 600;
       }
-  
+
       .testimonial-description {
         color: #666;
         margin-top: 10px;
         font-size: 1.1rem;
       }
-  
+
       .testimonial-card {
         background: white;
         border-radius: 15px;
@@ -525,40 +526,113 @@
         position: relative;
         transition: transform 0.3s ease;
       }
-  
+
       .testimonial-card:hover {
         transform: translateY(-5px);
       }
-  
+
       .quote-icon {
         color: #c1331b;
         font-size: 2rem;
         margin-bottom: 20px;
         opacity: 0.6;
       }
-  
+
       .testimonial-content {
         position: relative;
       }
-  
+
       .testimonial-text {
         color: #444;
         font-size: 1.1rem;
         line-height: 1.6;
         margin: 0;
       }
-  
-      @media (max-width: 768px) {
-        .testimonial-card {
+
+      /* Mobile-specific styles */
+      @media screen and (max-width: 768px) {
+        /* Container and general fixes */
+        .container {
+          padding-left: 15px;
+          padding-right: 15px;
+          max-width: 100%;
+          overflow-x: hidden;
+        }
+
+        section {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .row {
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        .col-md-6, .col-md-5, .col-lg-6 {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+
+        /* Fix horizontal scroll */
+        html, body {
+          overflow-x: hidden;
+          width: 100%;
+        }
+
+        /* Wave SVG fixes */
+        .wave, .wave-2 {
+          width: 100%;
+          overflow: hidden;
+        }
+
+        .wave svg, .wave-2 svg {
+          width: calc(100% + 2px);
+          max-width: none;
+        }
+
+        /* Testimonials specific mobile fixes */
+        #testimonials {
+          padding: 40px 0;
+        }
+
+        #testimonials .container {
+          width: 100%;
+          padding: 0 10px;
+        }
+
+        .testimonial-subtitle {
+          padding: 0 15px;
+          margin-top: 15px;
+          font-size: 1.3rem;
+        }
+
+        .testimonial-description {
+          padding: 0 15px;
+          font-size: 1rem;
           margin-bottom: 20px;
         }
-        
-        .testimonial-text {
-          font-size: 1rem;
+
+        .testimonial-card {
+          margin: 10px 0;
+          border-radius: 10px;
+          padding: 20px 15px;
         }
-        
-        .testimonial-subtitle {
-          font-size: 1.3rem;
+
+        .testimonial-text {
+          font-size: 0.95rem;
+          line-height: 1.5;
+        }
+
+        .quote-icon {
+          font-size: 1.5rem;
+          margin-bottom: 15px;
+        }
+
+        /* Section title adjustments */
+        .section-title h1,
+        .section-title-secondary h1 {
+          padding: 0 15px;
         }
       }
     </style>
@@ -875,6 +949,108 @@
     
     .card-text p {
       margin: 0;
+    }
+  </style>
+
+  <style>
+    /* Add these mobile-specific container and section styles */
+    @media screen and (max-width: 768px) {
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+
+      section {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .col-md-6, .col-md-5, .col-lg-6 {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      /* Fix testimonials cards on mobile */
+      .testimonial-card {
+        margin: 10px 5px;
+        padding: 20px 15px;
+      }
+
+      /* Adjust section titles for mobile */
+      .section-title h1,
+      .section-title-secondary h1 {
+        padding: 0 15px;
+      }
+
+      /* Fix any potential horizontal scroll */
+      html, body {
+        overflow-x: hidden;
+        width: 100%;
+      }
+
+      /* Adjust wave SVGs to prevent overflow */
+      .wave, .wave-2 {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .wave svg, .wave-2 svg {
+        width: calc(100% + 2px);
+        max-width: none;
+      }
+    </style>
+
+  <style>
+    /* Update testimonials section styles */
+    #testimonials {
+      padding: 60px 0;
+      background-color: #f8f3f3;
+      position: relative;
+    }
+
+    @media screen and (max-width: 768px) {
+      #testimonials {
+        padding: 40px 0;
+      }
+
+      #testimonials .container {
+        width: 100%;
+        padding: 0 10px;
+      }
+
+      .testimonial-subtitle {
+        padding: 0 15px;
+        margin-top: 15px;
+        font-size: 1.3rem;
+      }
+
+      .testimonial-description {
+        padding: 0 15px;
+        font-size: 1rem;
+        margin-bottom: 20px;
+      }
+
+      .testimonial-card {
+        margin: 10px 0;
+        border-radius: 10px;
+      }
+
+      .testimonial-text {
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+
+      .quote-icon {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
     }
   </style>
 
